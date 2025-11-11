@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI MCQ Mock Test App</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'primary': {
+              light: '#6366f1', // indigo-500
+              DEFAULT: '#4f46e5', // indigo-600
+              dark: '#4338ca'   // indigo-700
+            },
+            'secondary': '#10b981', // emerald-500
+            'base-100': 'rgb(241 245 249)', // slate-100 (light)
+            'base-200': 'rgb(226 232 240)', // slate-200 (light)
+            'base-300': 'rgb(203 213 225)', // slate-300 (light)
+            'base-content': 'rgb(15 23 42)', // slate-900 (light)
+            'dark-base-100': 'rgb(15 23 42)', // slate-900 (dark)
+            'dark-base-200': 'rgb(30 41 59)',  // slate-800 (dark)
+            'dark-base-300': 'rgb(51 65 85)',  // slate-700 (dark)
+            'dark-base-content': 'rgb(241 245 249)', // slate-100 (dark)
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-in-up': 'slideInUp 0.5s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+            slideInUp: {
+              '0%': { transform: 'translateY(20px)', opacity: 0 },
+              '100%': { transform: 'translateY(0)', opacity: 1 },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@google/genai": "https://next.esm.sh/@google/genai@^1.29.0?external=rxjs",
+    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.3.10?external=rxjs",
+    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.3.10?external=rxjs",
+    "@angular/forms": "https://next.esm.sh/@angular/forms@^20.3.10?external=rxjs",
+    "@angular/common": "https://next.esm.sh/@angular/common@^20.3.10?external=rxjs",
+    "@angular/common/http": "https://next.esm.sh/@angular/common@^20.3.10/http?external=rxjs",
+    "@angular/router": "https://next.esm.sh/@angular/router@^20.3.10?external=rxjs",
+    "@angular/core": "https://next.esm.sh/@angular/core@^20.3.10?external=rxjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-base-100 dark:bg-dark-base-100 text-base-content dark:text-dark-base-content transition-colors duration-300">
+  <app-root></app-root>
+</body>
+</html>
